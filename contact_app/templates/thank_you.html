@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+</head>
+<body>
+    <h1>Thank you for contacting us!</h1>
+    <h2>Submissions:</h2>
+    <ul>
+        {% for submission in submissions %}
+            <li>
+                <strong>{{ submission.name }}</strong> ({{ submission.email }}) - {{ submission.submitted_at }}<br>
+                "{{ submission.message }}"
+            </li>
+        {% empty %}
+            <li>No submissions yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

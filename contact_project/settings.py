@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-r53mxg#g2wjwhz+)!w$i(_v6pjyqmjonorvrhlq1&#9-wye-bo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['django-lab-contactapp-bagxgzcbe6cvgwgw.northeurope-01.azurewebsites.net']
+
 
 
 # Application definition
@@ -114,8 +116,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
+import os
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r53mxg#g2wjwhz+)!w$i(_v6pjyqmjonorvrhlq1&#9-wye-bo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['django-lab-contactapp-bagxgzcbe6cvgwgw.northeurope-01.azurewebsites.net']
